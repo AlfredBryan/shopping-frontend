@@ -23,7 +23,7 @@ class ProductProvider extends Component {
   setProducts = () => {
     let tempProducts = [];
 
-    axios.get("http://localhost:4000/api/products").then(res => {
+    axios.get("https://shopp-backend.herokuapp.com/api/products").then(res => {
       let newProduct = res.data;
       newProduct.forEach(item => {
         const singleItem = { ...item };
